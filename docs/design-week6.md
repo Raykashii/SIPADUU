@@ -23,7 +23,23 @@ Sistem Pantau Akademik dirancang untuk memudahkan pemantauan perkembangan akadem
 |NFR2| **Sistem harus memiliki antarmuka yang sederhana dan mudah digunakan oleh pengguna** | Menentukan penerimaan pengguna non-teknis (orang tua) |
 |NFR3| **Komponen antarmuka sistem harus dirancang secara modular dan dapat digunakan kembali** | KPenting untuk maintainability tim, tapi tidak langsung dirasakan pengguna akhir |
 
+## Asumsi Tim
+* Orang tua/wali merupakan pengguna utama sistem.
+* Admin bertanggung jawab terhadap maintenance dan pengelolaan sistem, bukan sebagai sumber utama data akademik.
+* Fakultas menjadi sumber data akademik seperti nilai, transkrip, dan data yang diperlukan untuk status UKT.
+* Data yang ditampilkan sistem diasumsikan telah tersedia dan dapat diakses oleh backend.
+* Distribusi token ke orang tua (lewat surat resmi, email, atau WhatsApp) berada di luar cakupan sistem ini — sistem hanya bertanggung jawab men-generate dan memvalidasi token.
+* Akses yang diberikan bersifat read-only — tidak ada kebutuhan bagi orang tua untuk mengubah data apa pun.
 
+## Modul dan Tanggung jawab
+| Modul | Tanggung Jawab |
+|---|---|
+| *Audit & Rate Limit Service* | Mencatat setiap percobaan akses (sukses/gagal) ke log audit, serta membatasi jumlah request dari IP/token yang sama dalam rentang waktu tertentu |
+| *Jadwal* | Menampilkan jadwal perkuliahan mahasiswa. |
+| *UKT* | Menampilkan status pembayaran UKT mahasiswa. |
+| *Academic Data* | Menyediakan transkrip nilai, perkembangan nilai, dan total SKS. |
+| *Dashboard Akademik* | Menampilkan ringkasan informasi akademik sesuai role pengguna. |
+| *Authentication & Role* | Login, autentikasi pengguna, dan pembatasan akses berdasarkan role. |
 
 ## Architecture
 ![Arsitektur](Arsitektur.jpeg)
