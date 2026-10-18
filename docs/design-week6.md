@@ -6,22 +6,22 @@ Sistem Pantau Akademik dirancang untuk memudahkan pemantauan perkembangan akadem
 ### Functional Requirement
 | ID | Requirement | Alasan Prioritas |
 |---|---|---|
-|R1| **Admin dapat men-generate dan mencabut (revoke) token kapan saja** | Fondasi — tanpa ini tidak ada mekanisme akses sama sekali |
-|R2| **Sistem membatasi jumlah percobaan akses per IP/token untuk mencegah penebakan token secara masif (brute force)** | Mekanisme Keamanan |
-|R3| **Orang tua dapat melihat nilai, kehadiran, dan status tagihan mahasiswa tanpa membuat akun — cukup melalui tautan/token akses** | Inti dari SIPADU. |
-|R4| **Sistem dapat menampilkan transkrip nilai mahasiswa** | Data akademik utama yang dibutuhkan baik admin, mahasiswa, maupun orang tua |
-|R5| **Sistem dapat menampilkan total SKS yang sudah diampu mahasiswa** | Turunan langsung dari data transkrip (R4) |
-|R6| **Dapat menampilkan status UKT mahasiswa** | - |
-|R7| **Dapat menampilkan jadwal perkuliahan mahasiswa** | - |
-|R8| **Tampilan dashboard disesuaikan dengan role (Admin dan User — Orang Tua & Mahasiswa)** | Lapisan UI/UX, bergantung pada R1–R7 sudah berjalan |
-|R9| **Sistem harus menampilkan grafik perkembangan IPK/IPS mahasiswa dari semester ke semester** | Visualisasi |
+|FR-01| **Admin dapat men-generate dan mencabut (revoke) token kapan saja** | Fondasi — tanpa ini tidak ada mekanisme akses sama sekali |
+|FR-02| **Sistem membatasi jumlah percobaan akses per IP/token untuk mencegah penebakan token secara masif (brute force)** | Mekanisme Keamanan |
+|FR-03| **Orang tua dapat melihat nilai, kehadiran, dan status tagihan mahasiswa tanpa membuat akun — cukup melalui tautan/token akses** | Inti dari SIPADU. |
+|FR-04| **Sistem dapat menampilkan transkrip nilai mahasiswa** | Data akademik utama yang dibutuhkan baik admin, mahasiswa, maupun orang tua |
+|FR-05| **Sistem dapat menampilkan total SKS yang sudah diampu mahasiswa** | Turunan langsung dari data transkrip (R4) |
+|FR-06| **Dapat menampilkan status UKT mahasiswa** | - |
+|FR-07| **Dapat menampilkan jadwal perkuliahan mahasiswa** | - |
+|FR-08| **Tampilan dashboard disesuaikan dengan role (Admin dan User — Orang Tua & Mahasiswa)** | Lapisan UI/UX, bergantung pada R1–R7 sudah berjalan |
+|FR-09| **Sistem harus menampilkan grafik perkembangan IPK/IPS mahasiswa dari semester ke semester** | Visualisasi |
 
 ### Non Functional Requirement
 | ID | Requirement | Alasan Prioritas |
 |---|---|---|
-|NFR1| **Sistem dapat berjalan di mobile maupun desktop** | Krusial karena orang tua kemungkinan besar akses lewat tautan di HP |
-|NFR2| **Sistem harus memiliki antarmuka yang sederhana dan mudah digunakan oleh pengguna** | Menentukan penerimaan pengguna non-teknis (orang tua) |
-|NFR3| **Komponen antarmuka sistem harus dirancang secara modular dan dapat digunakan kembali** | KPenting untuk maintainability tim, tapi tidak langsung dirasakan pengguna akhir |
+|NFR-01| **Sistem dapat berjalan di mobile maupun desktop** | Krusial karena orang tua kemungkinan besar akses lewat tautan di HP |
+|NFR-02| **Sistem harus memiliki antarmuka yang sederhana dan mudah digunakan oleh pengguna** | Menentukan penerimaan pengguna non-teknis (orang tua) |
+|NFR-03| **Komponen antarmuka sistem harus dirancang secara modular dan dapat digunakan kembali** | KPenting untuk maintainability tim, tapi tidak langsung dirasakan pengguna akhir |
 
 ## Asumsi Tim
 * Orang tua/wali merupakan pengguna utama sistem.
