@@ -1,0 +1,8 @@
+{
+  "name": "sipadu-workspace",
+  "private": true,
+  "scripts": {
+    "dev": "npm --prefix sistem-pantau-akademik run dev",
+    "build": "npm --prefix sistem-pantau-akademik run build"
+  }
+}

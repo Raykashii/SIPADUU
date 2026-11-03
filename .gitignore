@@ -1,0 +1,18 @@
+# Dependencies
+node_modules/
+sistem-pantau-akademik/node_modules/
+
+# Production builds
+dist/
+sistem-pantau-akademik/dist/
+
+# Environment files & logs
+*.local
+*.log
+npm-debug.log*
+
+# IDE & OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
