@@ -189,3 +189,10 @@ npm run dev
 
 Buka peramban (browser) di alamat:
 👉 **`http://localhost:5173`**
+
+## 6. Daftar Kontribusi Kelompok : 
+
+Rayhan Akmal Wibowo : Konfigurasi Vite dan Node JS
+Rasya Vikran Annadief : Implementasi FR - 08
+Rasha Arrazi : Code Review & Refactoring
+Rizki Mubarok : Code Review & Refactoring
