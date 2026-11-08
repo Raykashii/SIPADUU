@@ -192,7 +192,7 @@ Buka peramban (browser) di alamat:
 
 ## 6. Daftar Kontribusi Kelompok : 
 
-Rayhan Akmal Wibowo : Konfigurasi Vite dan Node JS
-Rasya Vikran Annadief : Implementasi FR - 08
-Rasha Arrazi : Code Review & Refactoring
-Rizki Mubarok : Code Review & Refactoring
+* Rayhan Akmal Wibowo : Konfigurasi Vite dan Node JS
+* Rasya Vikran Annadief : Implementasi FR - 08
+* Rasha Arrazi : Code Review & Refactoring
+* Rizki Mubarok : Code Review & Refactoring
